@@ -117,7 +117,9 @@ margin-right: auto;
 .contact-item:not(:last-child){
     margin-right: 30px;
     }
-
+ .contact-link:hover{
+        fill:var(--btn-bg-color);
+    }
 
 
 .mail{
