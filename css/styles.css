@@ -24,7 +24,7 @@ a {
     padding: 0;
     color: inherit;
 }
-h1, h2, h3, p{
+h1, h2, h3, h4, p{
     margin: 0;
 }
 img{
@@ -108,26 +108,28 @@ margin-right: auto;
     margin-left: auto;
 }
 
-
-.contact .iten + .iten {
-    margin-left: 50px;
+.contacts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
+.contact-item:not(:last-child){
+    margin-right: 30px;
+    }
+
+
+
 .mail{
-    display: block;
     color: var(--primary-text-color);
     padding-top: 32px;
     padding-bottom: 32px;
 }
 .tel {
-    display: block;
  color:var(--primary-text-color) ;
- margin-left: 50px;
  padding-top: 32px;
     padding-bottom: 32px;
 
-}
-.contact a:hover {
-    color: var(--accent-color);
 }
 .mail:hover,
 .mail:focus{
@@ -201,6 +203,25 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
+}
+
+.details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.details-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+     background-color:  #f5f4fa;
+     border-radius: 4px;
+     
 }
 
 .work-list{
@@ -305,7 +326,7 @@ display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .socials-link{
@@ -327,9 +348,8 @@ display: flex;
     fill: var(--primary-bg-color);
 }
     
-.socials-icon:hover{
-    fill: var(--primary-bg-color);
-}
+
+
 .socials-icon{
     fill: #afb1b8;
 }
@@ -385,8 +405,16 @@ display: flex;
 
 
 .page-footer {
+
    background-color: #2f303A;
 
+}
+
+ .block-footer{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 70px;
 }
 .page-footer .feedback {
     letter-spacing: 0.03em;
@@ -435,7 +463,46 @@ font-family: 'Raleway', sans-serif;
 margin-left: 0px;
 }
 
+.footer-header{
+    text-align: left;
+    color: var(--primary-bg-color);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.footer-icons{
+    display: block;
+    justify-content: center;
+}
+.f-links{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
 
+.footer-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+     background-color: rgba(255, 255, 255, 0.1);
+     border-radius: 50%;}
+
+.footer-icon{
+    fill: #fff
+}
+.footer-link:hover{
+    background-color:var(--btn-bg-color);
+}
+
+
+
+<!--portfolio-->
 
 
 
