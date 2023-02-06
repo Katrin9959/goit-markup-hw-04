@@ -33,11 +33,17 @@ img{
     height: auto;
 }
 .container{
+
 width: 1200px;
 padding-left: 15px;
 padding-right: 15px;
 margin-left: auto;
 margin-right: auto;
+}
+
+ .start{
+    display: flex;
+    border-bottom: 1px solid #ececec;
 }
 .section{
     padding-top: 94px;
@@ -47,9 +53,9 @@ margin-right: auto;
 
 .site-nav{
     display: flex;
-   justify-content: space-between;
+
     align-items: center;
-    border-bottom: 1px solid #ececec;
+   
 }
 
 .menu {
@@ -66,6 +72,7 @@ margin-right: auto;
     display: inline-block;
     padding-top: 24px;
     padding-bottom: 24px;
+    margin-right: 93px;
 
 
     font-family: 'Raleway', sans-serif; 
@@ -102,9 +109,9 @@ margin-right: auto;
 }
 .cont{
     display: flex;
-    justify-content: right;
-    align-items: center;
+
     gap: 30px;
+    margin-left: auto;
 }
 
 .contacts{
@@ -120,6 +127,7 @@ margin-right: auto;
 
 .contact-icon{
     margin-right: 10px;
+    fill: var(--primary-text-color);
 }
 .mail{
     display: flex;
@@ -280,6 +288,9 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 .feature:not(:last-child){
 margin-right: 30px;
 }
+.works{
+    padding-top: 0;
+}
 .skills{
     text-align: center;
     color: var(--title-text-color);
@@ -421,6 +432,7 @@ display: flex;
      background-color: #fff;
      border: 1px solid #afb1b8;
      border-radius: 4px;
+     outline: transparent;
      }
 
 
@@ -451,6 +463,8 @@ display: flex;
 .page-footer {
 
    background-color: #2f303A;
+   padding-top: 60px;
+   padding-bottom: 60px;
 
 }
 
@@ -462,7 +476,6 @@ display: flex;
 .page-footer .feedback {
     letter-spacing: 0.03em;
     line-height: 1.7;
-    padding-bottom: 60px;
 }
 .page-footer .feedback:hover {
     color:var(--accent-color);
@@ -472,7 +485,6 @@ font-family: 'Raleway', sans-serif;
     color: var(--accent-color);
     font-size: 26px;
     letter-spacing: 0.03em;
-    padding-top: 60px;
     display:inline-flex;
     margin-bottom: 20px;
 
@@ -524,7 +536,6 @@ margin-left: 0px;
     justify-content: left;
     align-items: center;
     gap: 10px;
-    margin-bottom: 30px;
 }
 
 .footer-link{
@@ -552,8 +563,8 @@ margin-left: 0px;
 
 
 
-.text .studia:hover,
-.text .studia:focus
+ .studia:hover,
+ .studia:focus
 {
     color: var(--accent-color);
 }
@@ -619,16 +630,16 @@ margin-left: 0px;
 }
 
 
-.shadow:hover,
-.shadow:focus{
+.main-foto:hover,
+.main-foto:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 
 }
 
 .main-foto{
     display: block;
-    max-width: 100%;
-    height:auto;
+    outline: transparent;
+
 }
 
 .poster{
